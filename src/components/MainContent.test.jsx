@@ -9,6 +9,7 @@ describe('MainContent', () => {
     render(<MainContent />);
 
     expect(screen.getByRole('button')).toBeInTheDocument();
+    expect(screen.getByTestId('testing-div')).toBeInTheDocument();
   });
 
   it('should show the help area after clicking the button', async () => {
